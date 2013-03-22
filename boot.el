@@ -1,3 +1,7 @@
+;;; boot.el --- load eeeeeeverythiiiing!
+
+;;; Code:
+
 (require 'rx)
 (require 'dired-x)
 
@@ -32,3 +36,6 @@ directories, which further contain a `load.el` file."
 
 ;; Load plugins
 (load-all-files-from (concat root-dir "hooks/"))
+
+;; Load shortcuts
+(load-all-files-from (concat root-dir "shortcuts/"))

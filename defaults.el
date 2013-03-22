@@ -1,3 +1,7 @@
+;;; defaults.el --- Bundle of default configuration and settings.
+
+;;; Code:
+
 ;; Initial settings
 (setq history-length 500)
 (setq history-delete-duplicates t)
@@ -8,6 +12,7 @@
 
 ;; Defaults
 (setq-default indent-tabs-mode nil)
+(setq-default swap-help-with-backward-delete-char t)
 
 ;; Enable blocked shortcuts
 (put 'upcase-region 'disabled nil)             ; c-x c-u

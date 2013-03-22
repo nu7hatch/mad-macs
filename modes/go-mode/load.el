@@ -12,16 +12,6 @@
 
 ;; See go-mode.el for documentation.
 
-;;; Code:
-
-;; To update this file, evaluate the following form
-;;   (let ((generated-autoload-file buffer-file-name)) (update-file-autoloads "go-mode.el"))
-
-
-;;;### (autoloads (gofmt-before-save gofmt go-mode) "go-mode" "go-mode.el"
-;;;;;;  (19917 17808))
-;;; Generated autoloads from go-mode.el
-
 (autoload 'go-mode "go-mode" "\
 Major mode for editing Go source text.
 
