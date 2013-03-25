@@ -8,7 +8,7 @@
 
 (require 'refresh-file)
 
-;; C-S-r -- Refreshes current buffer
-(global-set-key (kbd "C-S-r") 'refresh-file)
+;; C-c r -- Refreshes current buffer
+(global-set-key (kbd "C-c r") 'refresh-file)
 
 (provide 'refresh-file-load)
