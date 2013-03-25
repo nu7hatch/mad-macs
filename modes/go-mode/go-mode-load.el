@@ -1,4 +1,4 @@
-;;; load.el --- Major mode for the Go programming language
+;;; go-mode-load.el --- Major mode for the Go programming language
 
 ;;; Commentary:
 
