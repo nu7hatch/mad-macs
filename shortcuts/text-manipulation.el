@@ -1,4 +1,4 @@
-;;; text-manipulation.el -- Set of useful text manipulation 
+;;; text-manipulation.el --- Set of useful text manipulation 
 ;;  shortcuts.
 
 ;; RET -- Creates indented new line
