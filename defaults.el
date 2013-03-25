@@ -12,7 +12,11 @@
 
 ;; Defaults
 (setq-default indent-tabs-mode nil)
-(setq-default swap-help-with-backward-delete-char t)
+
+;; Dired ls-lisp configuration
+(setq ls-lisp-use-insert-directory-program nil) 
+(setq ls-lisp-dirs-first t)
+(setq ls-list-ignore-case t)
 
 ;; Enable blocked shortcuts
 (put 'upcase-region 'disabled nil)             ; c-x c-u
@@ -21,13 +25,14 @@
 
 ;; More cutstom settings
 (custom-set-variables
- '(global-linum-mode t)           ; use line numbers
- '(column-number-mode t)          ; use column numbers
- '(font-use-system-font t)        ; use default system fonts
- '(inhibit-startup-screen t)      ; skip welcome string
- '(scroll-bar-mode (quote right)) ; when window mode, use scrollbars
- '(truncate-lines t)              ; enable lines truncation
- '(delete-selection-mode t))      ; enable overriding of text
+ '(global-linum-mode t)                  ; use line numbers
+ '(column-number-mode t)                 ; use column numbers
+ '(font-use-system-font t)               ; use default system fonts
+ '(inhibit-startup-screen t)             ; skip welcome string
+ '(scroll-bar-mode (quote right))        ; when window mode, use scrollbars
+ '(truncate-lines t)                     ; enable lines truncation
+ '(dired-details-hidden-string "[...] ") ; dired prefix
+ '(delete-selection-mode t))             ; enable overriding of text
 
 ;; Hide menu bar and toolbars
 (menu-bar-mode -1)
