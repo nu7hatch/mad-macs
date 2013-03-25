@@ -8,7 +8,7 @@
   (interactive)
   (switch-to-buffer "*shell*"))
 
-(defun switch-to-shell-buffer ()
+(defun switch-to-terminal-buffer ()
   "Finds an active terminal buffer and switches to it."
   (interactive)
   (switch-to-buffer "*terminal*"))
