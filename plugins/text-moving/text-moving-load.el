@@ -1,5 +1,5 @@
-;;; load.el --- Loads text-moving plugin and sets up
-;;; default shortcuts for it.
+;;; text-moving-load.el --- Loads text-moving plugin and sets
+;;; up default shortcuts for it.
 
 ;;; Commentary:
 

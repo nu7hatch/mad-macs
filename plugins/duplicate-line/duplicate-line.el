@@ -4,7 +4,6 @@
 
 ;; `duplicate-current-line` - a simple function which provides a
 ;; duplicate line functionality.
-;;
 
 ;; Code:
 

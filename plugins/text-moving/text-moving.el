@@ -7,7 +7,6 @@
 ;;
 ;; `move-text-down` which swaps current line with the one below.
 ;; `move-text-up` which swaps current line with the one above.
-;;
 
 ;;; Code:
 
