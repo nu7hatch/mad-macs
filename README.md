@@ -68,6 +68,9 @@ Alternative buffers management tool.
 ### ibuffer
 Buffers on steroids. Basically it's like standard buffers extended with dired functionalities.
 
+### magit
+Awesome Magit plugin for GIT integration.
+
 ## Hooks
 
 ### dired-omit-mode
