@@ -1,6 +1,8 @@
 ## Shortcuts
 
-* generic
+List of custom shortcuts grouped by mode.
+
+### generic
 
     C-/     - undo
     C-h     - backward-delete-har
@@ -25,14 +27,14 @@
     M-p     - move-text-up
     M-n     - move-text-down
 
-* dired-mode
+### dired-mode
 
     ^       - (find-alternate-file "..")
     s       - dired-find
     (       - dired-details-hide
     )       - dired-details-show
 
-* ibuffer-mode
+### ibuffer-mode
 
     s       - ibuffer-filter-by-name
 
