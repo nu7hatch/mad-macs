@@ -71,6 +71,18 @@ Buffers on steroids. Basically it's like standard buffers extended with dired fu
 ### magit
 Awesome Magit plugin for GIT integration.
 
+### ergonomic-backspace-shortcuts
+Help shortcut swapped with backspace. 
+
+### dired-shortcuts
+Various helpers for dired.
+
+### text-manipulation-shortcuts
+Various helpers for text manipulation.
+
+### alignment-shortcuts
+Shortcuts for more handy usage of alignment commands.
+
 ## Hooks
 
 ### dired-omit-mode
