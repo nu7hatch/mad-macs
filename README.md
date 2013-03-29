@@ -4,7 +4,7 @@
 
     C-/     - undo
     C-h     - backward-delete-har
-    
+
     C-c h   - help
     C-c g   - magit-status
     C-c C-s - shell
@@ -72,7 +72,7 @@ Buffers on steroids. Basically it's like standard buffers extended with dired fu
 Awesome Magit plugin for GIT integration.
 
 ### ergonomic-backspace-shortcuts
-Help shortcut swapped with backspace. 
+Help shortcut swapped with backspace.
 
 ### dired-shortcuts
 Various helpers for dired.
@@ -82,6 +82,9 @@ Various helpers for text manipulation.
 
 ### alignment-shortcuts
 Shortcuts for more handy usage of alignment commands.
+
+### toggle
+Toggle switching between related files.
 
 ## Hooks
 
@@ -95,3 +98,6 @@ Hook that cleans up all trailing whitespaces before save.
 
 ### go-mode
 An editing mode for go language.
+
+### markdown-mode
+Major mode for Markdown syntax.

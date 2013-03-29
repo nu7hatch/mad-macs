@@ -13,6 +13,9 @@
 ;; Go programming language mode.
 (require 'go-mode-load)
 
+;; Major mode for Markdown syntax.
+(require 'markdown-mode-load)
+
 
 ;; -----> Plugins & extensions
 
@@ -50,8 +53,11 @@
 ;; extended with dired functionalities.
 (require 'ibuffer-load)
 
-;; Awesome Magit plugin for GIT integration..
+;; Awesome Magit plugin for GIT integration.
 (require 'magit-load)
+
+;; Toggle switching between related files.
+(require 'toggle-load)
 
 
 ;;; -----> Hooks:
