@@ -1,7 +1,5 @@
 ## Shortcuts
 
-List of custom shortcuts grouped by mode.
-
 ### generic
 
     C-/     - undo
@@ -17,12 +15,12 @@ List of custom shortcuts grouped by mode.
     C-c k   - kill-whole-line
     C-c d   - duplicate-current-line
     C-c r   - refresh-file
+    C-c u   - redo
 
     C-x a r - align-regexp
     C-x C-d - dired
     C-x C-b - ibuffer
     C-x u   - undo
-    C-x r   - redo
 
     M-p     - move-text-up
     M-n     - move-text-down
@@ -38,25 +36,43 @@ List of custom shortcuts grouped by mode.
 
     s       - ibuffer-filter-by-name
 
-## Plugins
+## Plugins, extensions, hooks & editing modes
 
-* duplicate-line
-* text-moving
-* redo+
-* refresh-file
-* dired-find
-* dired-details+
-* smart-linum
-* fancy-find-file
-* shell-utils
-* buffer-ring
-* ibuffer
+### duplicate-line
+Small plugin providing line duplication command.
 
-## Hooks setup
+### text-moving
+Pugin provides various text moving operations, eg. moving text block up or down.
 
-* dired-omit-mode
-* kill-trailing-whitespaces before save
+### redo+
+Redo mode, for those who don't like undo-only behavior.
 
-## Editing modes
+### refresh-file
+Small function which refreshes current buffer wtih file on disk.
 
-* go-mode
+### dired-find
+Improved regexp finder command for dired.
+
+### dired-details+
+Dired file details hiding.
+
+### smart-linum
+Linum mode enabled only in certain modes.
+
+### fancy-find-file
+Opening file with support for going to the line number, eg. `foo.txt:15`
+
+### buffer-ring
+Alternative buffers management tool.
+
+### ibuffer
+Buffers on steroids. Basically it's like standard buffers extended with dired functionalities.
+
+### dired-omit-mode
+Enables hook for omiting user defined files by dired.
+
+### kill-trailing-whitespaces-before-save
+Hook that cleans up all trailing whitespaces before save.
+
+### go-mode
+An editing mode for go language.
