@@ -36,7 +36,7 @@
 
     s       - ibuffer-filter-by-name
 
-## Plugins, extensions, hooks & editing modes
+## Plugins & extensions
 
 ### duplicate-line
 Small plugin providing line duplication command.
@@ -68,11 +68,15 @@ Alternative buffers management tool.
 ### ibuffer
 Buffers on steroids. Basically it's like standard buffers extended with dired functionalities.
 
+## Hooks
+
 ### dired-omit-mode
 Enables hook for omiting user defined files by dired.
 
 ### kill-trailing-whitespaces-before-save
 Hook that cleans up all trailing whitespaces before save.
+
+## Editing modes
 
 ### go-mode
 An editing mode for go language.
