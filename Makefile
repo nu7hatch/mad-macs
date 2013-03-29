@@ -1,5 +1,5 @@
-GIT=`which git`
-CURRENT_DIR=`pwd`
+GIT=git
+CURRENT_DIR=$(shell pwd)
 THIRDPARTY_DIR="./third-party"
 
 all: update-submodules thirdparty

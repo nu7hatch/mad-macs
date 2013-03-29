@@ -36,7 +36,6 @@
 
 ;; Hide menu bar and toolbars
 (menu-bar-mode -1)
-(tool-bar-mode -1)
 
 ;; Enable custom modes
 (show-paren-mode t)
