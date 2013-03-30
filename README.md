@@ -17,11 +17,11 @@ Provides following commands:
     move-text-up   M-p
     move-text-dow  M-n
 
-### redo+
+### [redo+](http://www.emacswiki.org/RedoPlus)
 Redo mode, for those who don't like undo-only behavior. Provides commands:
    
     undo  C-x u or C-/
-    redo  C-c u
+    redo  C-c u or C-?
 
 ### refresh-file
 Small function which refreshes current buffer wtih file on disk. Provided commands:
@@ -31,7 +31,7 @@ Small function which refreshes current buffer wtih file on disk. Provided comman
 ### dired-find
 Improved regexp finder command for dired.
 
-### dired-details+
+### [dired-details+](http://www.emacswiki.org/DiredDetails)
 Dired file details hiding. Provides commands in `dired-mode`:
 
     dired-details-hide  (
@@ -43,17 +43,17 @@ Linum mode enabled only in certain modes.
 ### fancy-find-file
 Opening file with support for going to the line number, eg. `foo.txt:15`
 
-### buffer-ring
+### [buffer-ring](http://www.emacswiki.org/BufferRing)
 Alternative buffers management tool.
 
-### ibuffer
+### [ibuffer](http://www.emacswiki.org/emacs/IbufferMode)
 Buffers on steroids. Basically it's like standard buffers extended with dired functionalities.
 Provided shortcuts:
 
     ibuffer                 C-x C-b
     ibuffer-filter-by-name  s
 
-### magit
+### [magit](http://www.emacswiki.org/emacs/Magit)
 Awesome Magit plugin for GIT integration. Provided shortcuts:
 
     magit-status  C-c g
@@ -91,7 +91,7 @@ Toggle switching between related files. Provides following commands:
 
 ## Hooks
 
-### dired-omit-mode
+### [dired-omit-mode](http://emacswiki.org/emacs/DiredOmitMode)
 Enables hook for omiting user defined files by dired.
 
 ### kill-trailing-whitespaces-before-save
@@ -102,5 +102,5 @@ Hook that cleans up all trailing whitespaces before save.
 ### go-mode
 An editing mode for go language.
 
-### markdown-mode
+### [markdown-mode](http://emacswiki.org/emacs/MarkdownMode)
 Major mode for Markdown syntax.
