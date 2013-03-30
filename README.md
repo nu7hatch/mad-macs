@@ -1,60 +1,41 @@
-## Shortcuts
+# Mad Macs - Insane Emacs Configuration Bundle
 
-### generic
-
-    C-/     - undo
-    C-h     - backward-delete-har
-
-    C-c h   - help
-    C-c g   - magit-status
-    C-c C-s - shell
-    C-c s   - switch-to-shell-buffer
-    C-c t   - switch-to-terminal-buffer
-    C-c b   - backward-kill-word
-    C-c f   - kill-word
-    C-c k   - kill-whole-line
-    C-c d   - duplicate-current-line
-    C-c r   - refresh-file
-    C-c u   - redo
-
-    C-x a r - align-regexp
-    C-x C-d - dired
-    C-x C-b - ibuffer
-    C-x u   - undo
-
-    M-p     - move-text-up
-    M-n     - move-text-down
-
-### dired-mode
-
-    ^       - (find-alternate-file "..")
-    s       - dired-find
-    (       - dired-details-hide
-    )       - dired-details-show
-
-### ibuffer-mode
-
-    s       - ibuffer-filter-by-name
+Mad Macs is a simple, highly customizable and straightforward configuration and plugins
+bundle for Emacs. Feel free to clone it and adjust to your needs.
 
 ## Plugins & extensions
 
 ### duplicate-line
-Small plugin providing line duplication command.
+Small plugin providing line duplication command. Provides following commands:
+
+    duplicate-line  C-c d
 
 ### text-moving
 Pugin provides various text moving operations, eg. moving text block up or down.
+Provides following commands:
+
+    move-text-up   M-p
+    move-text-dow  M-n
 
 ### redo+
-Redo mode, for those who don't like undo-only behavior.
+Redo mode, for those who don't like undo-only behavior. Provides commands:
+   
+    undo  C-x u or C-/
+    redo  C-c u
 
 ### refresh-file
-Small function which refreshes current buffer wtih file on disk.
+Small function which refreshes current buffer wtih file on disk. Provided commands:
+
+    refresh-file  C-c r
 
 ### dired-find
 Improved regexp finder command for dired.
 
 ### dired-details+
-Dired file details hiding.
+Dired file details hiding. Provides commands in `dired-mode`:
+
+    dired-details-hide  (
+    dired-details-show  )
 
 ### smart-linum
 Linum mode enabled only in certain modes.
@@ -67,24 +48,46 @@ Alternative buffers management tool.
 
 ### ibuffer
 Buffers on steroids. Basically it's like standard buffers extended with dired functionalities.
+Provided shortcuts:
+
+    ibuffer                 C-x C-b
+    ibuffer-filter-by-name  s
 
 ### magit
-Awesome Magit plugin for GIT integration.
+Awesome Magit plugin for GIT integration. Provided shortcuts:
+
+    magit-status  C-c g
 
 ### ergonomic-backspace-shortcuts
-Help shortcut swapped with backspace.
+Help shortcut swapped with backspace:
+
+    help                  C-c h
+    backward-delete-char  C-h
 
 ### dired-shortcuts
-Various helpers for dired.
+Various helpers for dired:
+
+    dired-find-parent  ^
+    dired-find         s
+    dired              C-x C-d
 
 ### text-manipulation-shortcuts
-Various helpers for text manipulation.
+Various helpers for text manipulation:
+
+    backward-kill-word  C-c b
+    kill-word           C-c f
+    kill-whole-line     C-c k
 
 ### alignment-shortcuts
-Shortcuts for more handy usage of alignment commands.
+Shortcuts for more handy usage of alignment commands:
+
+    align-regexp  C-x a r
 
 ### toggle
-Toggle switching between related files.
+Toggle switching between related files. Provides following commands:
+
+    toggle-buffer  C-c C-t t
+    toggle-style   C-c C-t s
 
 ## Hooks
 
