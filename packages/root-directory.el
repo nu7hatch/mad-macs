@@ -12,6 +12,13 @@
 (defun dired-find-root ()
   "Opens dired for root directory."
   (interactive)
-  (dired (concat root-directory)))
+  (dired root-directory))
+
+(defun load-local-config ()
+  "Loads local .emacs file if found in root directory."
+  (interactive)
+  (let ((local-config-file (concat root-directory ".emacs")))
+    (if (file-exists-p local-config-file)
+        (load local-config-file))))
 
 (provide 'root-directory)

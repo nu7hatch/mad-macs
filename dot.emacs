@@ -106,6 +106,7 @@
 (split-window-horizontally)
 (dired default-directory)
 (other-window 1)
+(load-local-config)
 
 
 ;;; --- MAD-MACS END ---

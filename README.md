@@ -95,6 +95,7 @@ Sets root directory of the project. Basically it sets
 from the moment of opening editor. Provides:
 
     dired-root-directory  C-c C-r
+    load-local-config     M-x ... RET
 
 ## Hooks
 
