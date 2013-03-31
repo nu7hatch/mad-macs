@@ -9,6 +9,7 @@
 (setq show-parent-delay 0)
 (setq ac-auto-start nil)
 (setq default-tab-width 4)
+(setq tramp-default-method "ssh")
 
 ;; Defaults
 (setq-default indent-tabs-mode nil)
