@@ -66,11 +66,3 @@
 
 (setq dired-omit-files-p t)
 (setq dired-omit-files omit)
-
-;; Multi-Web mode settings
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (css-mode "<style[^>]*>" "</style>")
-                  (js-mode "<script[^>]*>" "</script>")))
-
-(setq mweb-filename-extensions
-      '("php" "htm" "html" "ctp" "phtml" "php4" "php5" "erb"))
