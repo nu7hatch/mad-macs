@@ -1,0 +1,4 @@
+Things to do:
+
+* TODO fix editorconfig
+* TODO fix mmm mode or use some other multi mode

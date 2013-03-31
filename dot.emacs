@@ -101,6 +101,7 @@
 ;; -----> Set up your workspace...
 (split-window-horizontally)
 (dired default-directory)
+(other-window 1)
 
 
 ;;; --- MAD-MACS END ---

@@ -67,3 +67,6 @@
 
 (setq dired-omit-files-p t)
 (setq dired-omit-files omit)
+
+;; Custom modes
+(add-to-list 'auto-mode-alist (cons "\\.emacs$" #'emacs-lisp-mode))
