@@ -19,7 +19,7 @@ Provides following commands:
 
 ### [redo+](http://www.emacswiki.org/RedoPlus)
 Redo mode, for those who don't like undo-only behavior. Provides commands:
-   
+
     undo  C-x u or C-/
     redo  C-c u or C-?
 
@@ -100,7 +100,16 @@ Hook that cleans up all trailing whitespaces before save.
 ## Editing modes
 
 ### go-mode
-An editing mode for go language.
+Major editing mode for Go language.
 
 ### [markdown-mode](http://emacswiki.org/emacs/MarkdownMode)
 Major mode for Markdown syntax.
+
+### [haml-mode](https://github.com/nex3/haml-mode)
+Major mode for HAML documents.
+
+### [scss-mode](https://github.com/antonj/scss-mode)
+Major mode for SCSS stylesheets.
+
+### [sass-mode](https://github.com/nex3/sass-mode)
+Major mode for SASS stylesheets.
