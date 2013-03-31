@@ -1,3 +1,4 @@
 # TODO: List
 
-* Fix C-?
+* fix editorconfig
+* fix mmm mode

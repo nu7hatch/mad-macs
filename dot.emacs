@@ -10,11 +10,20 @@
 
 ;; -----> Editing modes:
 
-;; Go programming language mode.
+;; Go programming language major mode.
 (require 'go-mode-load)
 
 ;; Major mode for Markdown syntax.
 (require 'markdown-mode-load)
+
+;; Major mode for HAML docs.
+(require 'haml-mode-load)
+
+;; Major mode for SASS stylesheets.
+(require 'sass-mode-load)
+
+;; Major mode for SCSS stylesheets.
+(require 'scss-mode-load)
 
 
 ;; -----> Plugins & extensions
@@ -58,6 +67,11 @@
 
 ;; Toggle switching between related files.
 (require 'toggle-load)
+
+;; Tool provides support for .editorconfig dotfiles.
+;; This plugin requires editorconfig system command to be
+;; installed and available.
+(require 'editorconfig-load)
 
 
 ;;; -----> Hooks:

@@ -14,7 +14,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;; Dired ls-lisp configuration
-(setq ls-lisp-use-insert-directory-program nil) 
+(setq ls-lisp-use-insert-directory-program nil)
 (setq ls-lisp-dirs-first t)
 (setq ls-list-ignore-case t)
 
@@ -31,6 +31,7 @@
  '(inhibit-startup-screen t)             ; skip welcome string
  '(scroll-bar-mode (quote right))        ; when window mode, use scrollbars
  '(truncate-lines t)                     ; enable lines truncation
+ '(sass-compile-at-save f)               ; should sass be compiled on save?
  '(dired-details-hidden-string "[...] ") ; dired prefix
  '(delete-selection-mode t))             ; enable overriding of text
 
@@ -42,38 +43,34 @@
 (global-linum-mode t)
 
 ;; Files to omit by dired
-(setq dired-omit-files
-      (rx (or 
-           (seq bol (? ".?") "#")          ; Emacs autosaves
-           (seq "~" eol)                   ; Backups 
-           (seq bol "CVS" eol)             ; CVS dirs
-           (seq bol "\.svn" eol)           ; SVN dirs
-           (seq bol "\.git" eol)           ; GIT dir
-           (seq "\.py(c|o)" eol)           ; Python compiled files
-           (seq "\.rbc" eol)               ; Rubinius compiled files
-           (seq "\.s?(o|a)" eol)           ; C/C++ shit
-           (seq "\.l(a|o)" eol)
-           (seq bol ".eproject" eol)       ; eproject files   
-           (seq "\.in" eol)                ; autotools files...
-           (seq "\.status" eol)
-           (seq bol "\.deps" eol)
-           (seq bol "\.libs" eol)
-           (seq bol "\.tmp" eol)
-           (seq bol "\.sass-cache" eol)
-           (seq bol "stamp-h1" eol)
-           (seq bol "libtool" eol)
-           (seq bol "autom4te.cache" eol)
-           (seq bol "aclocal.m4" eol)      ; m4 files
-           (seq bol "build-m4" eol)
-           (seq bol "build-aux" eol)
-           (seq "\.log" eol)               ; Log files
-           (seq "\.6" eol)                 ; Go compiler files
-           (seq "\.out" eol)
-           (seq bol "_test" eol)
-           (seq bol "_testmain.go" eol)
-           (seq bol "CMakeCache.txt" eol)  ; CMake files
-           (seq bol "CTestTestfile.cmake")
-           (seq bol "cmake_install.cmake")
-           (seq "-tests" eol)
-           (seq bol "CMakeFiles" eol)
-           (seq "\.tmp" eol))))            ; Temp files
+(setq omit "")
+
+(setq omit (concat omit "^\\.?\\#"))                                       ; emacs
+(setq omit (concat omit "\\|^~"))                                          ; vim
+(setq omit (concat omit "\\|^\\.DS_Store$"))                               ; mac
+(setq omit (concat omit "\\|^\\.git$"))                                    ; git
+(setq omit (concat omit "\\|^CVS$"))                                       ; cvs
+(setq omit (concat omit "\\|^\\.svn$"))                                    ; svn
+(setq omit (concat omit "\\|\\.py\\(c\\|o\\)$"))                           ; python
+(setq omit (concat omit "\\|\\.rbc$"))                                     ; rubinius
+(setq omit (concat omit "\\|\\.\\(l\\|s\\)?\\(o\\|a\\)$"))                 ; c/cpp
+(setq omit (concat omit "\\|\\.in$\\|^\\.deps$\\|^\\.libs$\\|\\.tmp$"))    ; autotools
+(setq omit (concat omit "\\|\\.status$\\|^libtool$\\|^stamp-h1$"))         ; ...
+(setq omit (concat omit "\\|^automate.cache$\\|^build-\\(m4\\|aux\\)$"))   ; m4
+(setq omit (concat omit "\\|^_test$\\|^_testmain.go$\\|\\.6$\\|\\.out$"))  ; go
+(setq omit (concat omit "\\|\\.log$"))                                     ; logs
+(setq omit (concat omit "\\|\\.sass-cache$"))                              ; sass
+(setq omit (concat omit "\\|^CMakeCache.txt$\\|^-tests$\\|^CMakeFiles$"))  ; cmake
+(setq omit (concat omit "\\|^\\(cmake_install\\|CMakeTestfile\\).cmake$")) ; ...
+(setq omit (concat omit "\\|\\.tmp$"))                                     ; temporal
+
+(setq dired-omit-files-p t)
+(setq dired-omit-files omit)
+
+;; Multi-Web mode settings
+(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
+                  (css-mode "<style[^>]*>" "</style>")
+                  (js-mode "<script[^>]*>" "</script>")))
+
+(setq mweb-filename-extensions
+      '("php" "htm" "html" "ctp" "phtml" "php4" "php5" "erb"))
