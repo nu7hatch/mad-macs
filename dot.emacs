@@ -73,6 +73,10 @@
 ;; installed and available.
 (require 'editorconfig-load)
 
+;; Sets root directory of the project. Basically it sets
+;; `root-directory` variable with value of `default-directory`
+;; from the moment of opening editor.
+(require 'root-directory-load)
 
 ;;; -----> Hooks:
 

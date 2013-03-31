@@ -89,6 +89,13 @@ Toggle switching between related files. Provides following commands:
     toggle-buffer  C-c C-t t
     toggle-style   C-c C-t s
 
+### root-directory
+Sets root directory of the project. Basically it sets
+`root-directory` variable with value of `default-directory`
+from the moment of opening editor. Provides:
+
+    dired-root-directory  C-c C-r
+
 ## Hooks
 
 ### [dired-omit-mode](http://emacswiki.org/emacs/DiredOmitMode)
