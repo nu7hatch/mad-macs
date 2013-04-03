@@ -72,3 +72,8 @@
 ;; Custom modes
 (add-to-list 'auto-mode-alist (cons "\\.emacs$" #'emacs-lisp-mode))
 (add-to-list 'auto-mode-alist (cons "\\.elocal$" #'emacs-lisp-mode))
+
+(add-to-list 'auto-mode-alist (cons "Gemfile$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "Vagrantfile$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "config\\.ru$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "\\.rake$" #'ruby-mode))
