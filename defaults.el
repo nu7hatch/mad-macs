@@ -70,3 +70,4 @@
 
 ;; Custom modes
 (add-to-list 'auto-mode-alist (cons "\\.emacs$" #'emacs-lisp-mode))
+(add-to-list 'auto-mode-alist (cons "\\.elocal$" #'emacs-lisp-mode))

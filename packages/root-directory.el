@@ -17,7 +17,7 @@
 (defun load-local-config ()
   "Loads local .emacs file if found in root directory."
   (interactive)
-  (let ((local-config-file (concat root-directory ".emacs")))
+  (let ((local-config-file (concat root-directory ".elocal")))
     (if (file-exists-p local-config-file)
         (load local-config-file))))
 
