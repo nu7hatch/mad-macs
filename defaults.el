@@ -64,6 +64,7 @@
 (setq omit (concat omit "\\|^CMakeCache.txt$\\|^-tests$\\|^CMakeFiles$"))  ; cmake
 (setq omit (concat omit "\\|^\\(cmake_install\\|CMakeTestfile\\).cmake$")) ; ...
 (setq omit (concat omit "\\|\\.tmp$"))                                     ; temporal
+(setq omit (concat omit "\\|\\.vagrant$"))                                 ; vagrant
 
 (setq dired-omit-files-p t)
 (setq dired-omit-files omit)
