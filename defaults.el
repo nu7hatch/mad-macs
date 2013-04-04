@@ -37,7 +37,9 @@
  '(delete-selection-mode t))             ; enable overriding of text
 
 ;; Hide menu bar and toolbars
-(menu-bar-mode -1)
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'tabbar-mode) (tabbar-mode -1))
 
 ;; Enable custom modes
 (show-paren-mode t)
@@ -75,5 +77,5 @@
 
 (add-to-list 'auto-mode-alist (cons "Gemfile$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "Vagrantfile$" #'ruby-mode))
-(add-to-list 'auto-mode-alist (cons "config\\.ru$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "\\.ru$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "\\.rake$" #'ruby-mode))

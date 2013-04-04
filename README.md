@@ -121,3 +121,6 @@ Major mode for SCSS stylesheets.
 
 ### [sass-mode](https://github.com/nex3/sass-mode)
 Major mode for SASS stylesheets.
+
+### [yaml-mode](https://github.com/yoshiki/yaml-mode)
+YAML files major mode.

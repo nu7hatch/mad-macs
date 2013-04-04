@@ -25,6 +25,8 @@
 ;; Major mode for SCSS stylesheets.
 (require 'scss-mode-load)
 
+;; YAML file major mode.
+(require 'yaml-mode-load)
 
 ;; -----> Plugins & extensions
 
