@@ -45,6 +45,10 @@
 (show-paren-mode t)
 (global-linum-mode t)
 
+;; Friendlier ruby indentation
+(setq ruby-deep-indent-paren nil)
+(setq ruby-deep-arglist nil)
+
 ;; Files to omit by dired
 (setq omit "")
 
@@ -76,6 +80,7 @@
 (add-to-list 'auto-mode-alist (cons "\\.elocal$" #'emacs-lisp-mode))
 
 (add-to-list 'auto-mode-alist (cons "Gemfile$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "Rakefile$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "Vagrantfile$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "\\.ru$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "\\.rake$" #'ruby-mode))
