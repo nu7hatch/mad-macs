@@ -4,7 +4,7 @@
 
 ;; See haml-mode.el for documentation.
 
-(autoload 'any-init-mode "any-init-mode" "\
+(autoload 'any-ini-mode "any-ini-mode" "\
 Major mode for editing INI configuration text.
 
 \(fn)" t nil)
