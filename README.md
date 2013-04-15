@@ -124,3 +124,6 @@ Major mode for SASS stylesheets.
 
 ### [yaml-mode](https://github.com/yoshiki/yaml-mode)
 YAML files major mode.
+
+### [any-ini-mode]
+Major mode for INI and configuration files.
