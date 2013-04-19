@@ -28,6 +28,12 @@
 ;; YAML file major mode.
 (require 'yaml-mode-load)
 
+;; Major mode for INI and configuration files.
+(require 'any-ini-mode-load)
+
+;; Major mode for Jinja2 templates.
+(require 'jinja2-mode-load)
+
 ;; -----> Plugins & extensions
 
 ;; Small plugin providing line duplication command.
