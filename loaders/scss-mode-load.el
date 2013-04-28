@@ -10,5 +10,6 @@ Major mode for editing scss documents text.
 \(fn)" t nil)
 
 (add-to-list 'auto-mode-alist (cons "\\.scss$" #'scss-mode))
+(setq scss-compile-at-save nil)
 
 (provide 'scss-mode-load)
