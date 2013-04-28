@@ -16,5 +16,5 @@
 ;; Set up autoload paths
 (add-to-list 'load-path (concat root-dir "packages/") t)
 (add-to-list 'load-path (concat root-dir "packages/magit/") t)
-(add-to-list 'load-path (concat root-dir "packages/mmm-mode/") t)
+(add-to-list 'load-path (concat root-dir "packages/scala-mode2/") t)
 (add-to-list 'load-path (concat root-dir "loaders/") t)

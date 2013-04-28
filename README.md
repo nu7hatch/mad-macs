@@ -130,3 +130,6 @@ Major mode for INI and configuration files.
 
 ### [jinja2-mode](https://github.com/paradoxxxzero/jinja2-mode)
 Major mode for Jinja2 templates.
+
+### [scala-mode2](https://github.com/hvesalai/scala-mode2)
+Major mode for scala files.

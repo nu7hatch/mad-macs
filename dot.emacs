@@ -34,6 +34,10 @@
 ;; Major mode for Jinja2 templates.
 (require 'jinja2-mode-load)
 
+;; Major mode for scala files.
+(require 'scala-mode-load)
+
+
 ;; -----> Plugins & extensions
 
 ;; Small plugin providing line duplication command.
@@ -86,6 +90,7 @@
 ;; from the moment of opening editor.
 (require 'root-directory-load)
 
+
 ;;; -----> Hooks:
 
 ;; Enables hook for omiting user defined files by dired.
@@ -111,6 +116,7 @@
 
 
 ;; -----> Set up your workspace...
+
 (split-window-horizontally)
 (dired default-directory)
 (other-window 1)
