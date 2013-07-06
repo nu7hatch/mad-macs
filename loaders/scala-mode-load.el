@@ -5,3 +5,5 @@
 ;; See scala-mode2 for documentation.
 
 (require 'scala-mode2)
+
+(provide 'scala-mode-load)
