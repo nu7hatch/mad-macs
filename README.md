@@ -133,3 +133,6 @@ Major mode for Jinja2 templates.
 
 ### [scala-mode2](https://github.com/hvesalai/scala-mode2)
 Major mode for scala files.
+
+### [cmake-mode](http://www.cmake.org/CMakeDocs/cmake-mode.el)
+Major mode for cmake files.

@@ -37,6 +37,9 @@
 ;; Major mode for scala files.
 (require 'scala-mode-load)
 
+;; Major mode for cmake files.
+(require 'cmake-mode-load)
+
 
 ;; -----> Plugins & extensions
 
